@@ -1,0 +1,25 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(223,223,223);
+}
+html:not(.navbar) {
+  background-color: rgb(40,40,40);
+}
+ul {
+  font-size: 90%;
+  margin-bottom: 10px;
+}
+ul span.ch-title {
+  font-size: 140%;
+  font-weight: bold;
+}
+div.header {
+  text-align: right;
+}
+a {
+  text-decoration: none;
+  color: white;
+} 
+a:visited:not(#svetlana){
+  color: rgb(180,180,180);
+}
