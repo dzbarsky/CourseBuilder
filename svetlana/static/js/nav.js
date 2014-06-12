@@ -179,5 +179,6 @@ window.addEventListener("load", function() {
   div.style.setProperty("border","1px solid black");
   div.style.left = "0px";
   div.style.top = "0px";
+  div.style.setProperty("margin-top", "20px");
   document.body.appendChild(div);
 });
