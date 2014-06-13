@@ -9,25 +9,31 @@ function createDiv(menu)
     if (typeof elem === 'string') {
       inner.innerHTML = elem;
     } else {
-      inner.innerHTML = elem.title;
-      inner.submenu = createDiv(elem.elements);
-      inner.submenu.style.setProperty("display", "none");
-      inner.submenu.style.setProperty("border","1px solid black");
-      inner.appendChild(inner.submenu);
-      inner.addEventListener("mouseenter", function(inner) {
-        return function() {
-          inner.submenu.style.setProperty("display", "inline-block");
-          inner.submenu.style.setProperty("position", "fixed");
-          var rect = inner.getBoundingClientRect();
-          inner.submenu.style.top = rect.top;
-          inner.submenu.style.left = rect.right;
-        }
-      }(inner));
-      inner.addEventListener("mouseleave", function(inner) {
-        return function() {
-          inner.submenu.style.setProperty("display", "none");
-        }
-      }(inner));
+      if (elem.url) {
+        inner.innerHTML = '<a href="' + elem.url + '">' + elem.title + '</a>';
+      } else {
+        inner.innerHTML = elem.title;
+      }
+      if (elem.elements) {
+        inner.submenu = createDiv(elem.elements);
+        inner.submenu.style.setProperty("display", "none");
+        inner.submenu.style.setProperty("border","1px solid black");
+        inner.appendChild(inner.submenu);
+        inner.addEventListener("mouseenter", function(inner) {
+          return function() {
+            inner.submenu.style.setProperty("display", "inline-block");
+            inner.submenu.style.setProperty("position", "fixed");
+            var rect = inner.getBoundingClientRect();
+            inner.submenu.style.top = rect.top;
+            inner.submenu.style.left = rect.right;
+          }
+        }(inner));
+        inner.addEventListener("mouseleave", function(inner) {
+          return function() {
+            inner.submenu.style.setProperty("display", "none");
+          }
+        }(inner));
+      }
     }
     div.appendChild(inner);
   }
@@ -166,7 +172,12 @@ var menu = [{ title: "ТЕКСТЫ",
                                       }]
                           }]
             },
-            "РУССКИЙ<br>АЛФАВИТ",
+            { title: "РУССКИЙ<br>АЛФАВИТ",
+              elements: [ { title: "о русском алфавите", url: "alphabet-about.html"},
+                          { title: "алфавит", url: "alphabet.html"},
+                          { title: "образы", url: "alphabet-imagery.html"}
+                        ]
+            },
             "ГРАММАТИКА И<br>ОРФОГРАФИЯ",
             "СТИЛИСТИКА",
             "СЛОВАРЬ",
