@@ -5,7 +5,7 @@ from russ360 import views
 urlpatterns = patterns('',
 
     url(r'^$', views.index, name='index'),
-    url(r'^chapter1$', views.chapter1, name='chapter1'),
+    url(r'^alphabet-about.html$', views.alphabet_about, name='alphabet_about'),
     url(r'^chapter2$', views.chapter2, name='chapter2'),
     url(r'^chapter3$', views.chapter3, name='chapter3'),
     url(r'^chapter4$', views.chapter4, name='chapter4'),

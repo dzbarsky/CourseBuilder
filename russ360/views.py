@@ -5,8 +5,8 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'index.html')
 
-def chapter1(request):
-    return render(request, 'chapter1.html')
+def alphabet_about(request):
+    return render(request, 'alphabet-about.html')
 
 def chapter2(request):
     return render(request, 'chapter2.html')
