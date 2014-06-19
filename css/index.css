@@ -2,3 +2,20 @@ html {
   background: url("../images/kremlin_bw.jpg") no-repeat center center fixed;
   background-size: cover;
 }
+div.header, #svetlana {
+  color: rgb(173,173,253);
+}
+#svetlana:hover {
+  text-decoration: underline;
+}
+hr {
+  margin-top: 17px;
+  margin-bottom: 17px;
+  border-color: rgba(255,255,255,0.3);
+}
+.header #class-details {
+  text-align: right; 
+}
+.header #titles {
+  text-align: left;
+}
