@@ -301,7 +301,7 @@ var menu =
 
 window.addEventListener("load", function() {
   var div = createDiv(menu);
-  div.style.setProperty("position", "static");
+  div.style.setProperty("position", "fixed");
   div.style.setProperty("border","1px solid black");
   div.style.left = "0px";
   div.style.top = "0px";
