@@ -19,3 +19,11 @@ hr {
 .header #titles {
   text-align: left;
 }
+.menu-item {
+  color: white;
+  background-color: rgba(0,0,0,0.4);
+}
+.menu-item:hover {
+  color: rgb(154,230,154);
+}
+

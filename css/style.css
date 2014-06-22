@@ -15,18 +15,17 @@ ul span.ch-title {
 }
 a {
   text-decoration: none;
-  color: white;
+ // color: white;
+  color: inherit;
 } 
 a:visited:not(#svetlana){
   color: rgb(180,180,180);
 }
 .menu-item {
   padding: 10px 15px 10px 15px;
-  background-color: rgba(0,0,0,0.4);
   border-top: 1px solid black;
-}
-.menu-item {
-  color: white;
+  background-color: rgb(241,241,241);
+  color: black;
 }
 .menu-item:hover {
   color: rgb(154,230,154);
