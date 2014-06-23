@@ -18,14 +18,13 @@ a {
  // color: white;
   color: inherit;
 } 
-a:visited:not(#svetlana){
-  color: rgb(180,180,180);
-}
 .menu-item {
   padding: 10px 15px 10px 15px;
-  border-top: 1px solid black;
   background-color: rgb(241,241,241);
   color: black;
+}
+.menu-item + .menu-item {
+  border-top: 1px solid black;
 }
 .menu-item:hover {
   color: rgb(154,230,154);
@@ -35,4 +34,33 @@ a:visited:not(#svetlana){
   left: 0px;
   top: 0px; 
   height: 100%;
+}
+.header {
+  margin-top: 10x;
+  margin-right: 10px;
+  font-size: 22px;
+}
+table#alphabet td {
+  border-bottom: 1px solid #000;
+}
+table#alphabet .no-border td {
+  border: none !important;
+}
+table#alphabet img {
+  border: 4px solid black;
+}
+table#alphabet td {
+  text-align: center;
+  font-size: 18px;
+}
+.text-content {
+  margin: 50px 100px 100px 200px; 
+  font-size: 24px;
+}
+.text-content p {
+  margin-bottom: 30px;
+}
+.text-content img {
+  margin: 20px 0px;
+  border: 1px solid black;
 }
