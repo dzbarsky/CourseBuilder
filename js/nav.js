@@ -41,7 +41,8 @@ function createDiv(menu)
 }
 
 var menu = 
-[{
+[{title: "HOME", url:"index.html"},
+ {
    title:"ТЕКСТЫ",
    elements:[
       {
