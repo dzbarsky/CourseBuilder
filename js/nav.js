@@ -291,6 +291,10 @@ var menu =
       {
          title:"образы",
          url:"alphabet-imagery.html"
+      },
+      {
+         title:"Прописи",
+         url:"cursive.pdf"
       }
    ]
 },
