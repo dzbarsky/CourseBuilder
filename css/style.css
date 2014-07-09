@@ -1,9 +1,9 @@
 html {
   font-family: 'Roboto', sans-serif;
-  color: rgb(223,223,223);
+  color: rgb(0,0,0);
 }
 html:not(.navbar) {
-  background-color: rgb(40,40,40);
+  background-color: rgb(204,204,204);
 }
 ul {
   font-size: 90%;
@@ -36,9 +36,11 @@ a {
   height: 100%;
 }
 .header {
-  margin-top: 10x;
+  margin-top: 10px;
   margin-right: 10px;
   font-size: 22px;
+  font-weight: bold;
+  text-decoration: underline;
 }
 table#alphabet td {
   border-bottom: 1px solid #000;
