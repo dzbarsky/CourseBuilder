@@ -66,3 +66,24 @@ table#alphabet td {
   margin: 20px 0px;
   border: 1px solid black;
 }
+
+.hover {
+  color: rgb(52,52,163);
+}
+.hover:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.hover > .tag {
+  display: none;
+}
+.hover:hover > .tag {
+  display: block;
+  position: absolute;
+  font-size: 14px;
+  color: black;
+  border: 1px solid black;
+  padding: 7px;
+  font-weight: bold;
+  background-color: rgb(220,241,67);
+}
