@@ -39,15 +39,14 @@ function playSegment(startTime, endTime){
 </div>
 
 <div class='text-content'>
-
-
-<table id='alphabet' cellpadding='13'>
+<table id='alphabet'>
 	<tr class='no-border' style='margin-bottom:20px;'>
 		<td><u>No</u></td>
 		<td><u>Начертание печатных букв</u></td>
 		<td><u>Начертание рукописных букв</u></td>
 		<td><u>Названия букв</u></td>
 		<td><u>Звуковое значение букв</u></td>
+        <td><u>Play</u></td>
 	</tr>
 	<tr>
 		<td>1</td>
@@ -55,8 +54,13 @@ function playSegment(startTime, endTime){
 		<td><img src="images/letter1.png"></td>
 		<td>А</td>
 		<td>ah - (car)</td>
-		<td><a href="javascript:playSegment(1.0, 1.5)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(1.0, 1.5)"><img src='images/play-icon.png'></a></td>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>2</td>
 		<td>Б б</td>
@@ -64,255 +68,410 @@ function playSegment(startTime, endTime){
 
 		<td>Бэ</td>
 		<td>beh - (bit)</td>
-		<td><a href="javascript:playSegment(2.5, 4)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(2.5, 4)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>3</td>
 		<td>В в</td>
 		<td><img src="images/letter3.png"></td>
 		<td>Вэ</td>
 		<td>veh - (vine)</td>
-		<td><a href="javascript:playSegment(4, 5)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(4, 5)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>4</td>
 		<td>Г г</td>
 		<td><img src="images/letter4.png"></td>
 		<td>Гэ</td>
 		<td>geh - (go)</td>
-		<td><a href="javascript:playSegment(5, 6.5)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(5, 6.5)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>5</td>
 		<td>Д д</td>
 		<td><img src="images/letter5.png"></td>
 		<td>Дэ</td>
 		<td>deh - (do)</td>
-		<td><a href="javascript:playSegment(7, 8.5)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(7, 8.5)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>6</td>
 		<td>Е е</td>
 		<td><img src="images/letter6.png"></td>
 		<td>Е</td>
 		<td>yeh - (yet)</td>
-		<td><a href="javascript:playSegment(9, 10.5)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(9, 10.5)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>7</td>
 		<td>Ё ё</td>
 		<td><img src="images/letter7.png"></td>
 		<td>Ё</td>
 		<td>yo - (yolk)</td>
-		<td><a href="javascript:playSegment(11, 12)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(11, 12)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>8</td>
 		<td>Ж ж</td>
 		<td><img src="images/letter8.png"></td>
 		<td>Же</td>
 		<td>zheh - (pleasure)</td>
-		<td><a href="javascript:playSegment(12.5, 14)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(12.5, 14)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>9</td>
 		<td>З з</td>
 		<td><img src="images/letter9.png"></td>
 		<td>Зэ</td>
 		<td>zeh - (zoo)</td>
-		<td><a href="javascript:playSegment(14.5, 16)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(14.5, 16)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>10</td>
 		<td>И и</td>
 		<td><img src="images/letter10.png"></td>
 		<td>И</td>
 		<td>ee - (see)</td>
-		<td><a href="javascript:playSegment(16.5, 17)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(16.5, 17)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>11</td>
 		<td>Й й</td>
 		<td><img src="images/letter11.png"></td>
 		<td>и краткое</td>
 		<td>ee kratkoe - (boy)</td>
-		<td><a href="javascript:playSegment(17, 19)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(17, 19)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>12</td>
 		<td>К к</td>
 		<td><img src="images/letter12.png"></td>
 		<td>Ка</td>
 		<td>kah - (kitten)</td>
-		<td><a href="javascript:playSegment(19.5, 21)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(19.5, 21)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>13</td>
 		<td>Л л</td>
 		<td><img src="images/letter13.png"></td>
 		<td>Эль</td>
 		<td>ehl - (lamp)</td>
-		<td><a href="javascript:playSegment(21.5, 23)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(21.5, 23)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>14</td>
 		<td>М м</td>
 		<td><img src="images/letter14.png"></td>
 		<td>Эм</td>
 		<td>ehm - (map)</td>
-		<td><a href="javascript:playSegment(23, 24.5)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(23, 24.5)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>15</td>
 		<td>Н н</td>
 		<td><img src="images/letter15.png"></td>
 		<td>Эн</td>
 		<td>ehn - (not)</td>
-		<td><a href="javascript:playSegment(24.5, 25.5)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(24.5, 25.5)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>16</td>
 		<td>О о</td>
 		<td><img src="images/letter16.png"></td>
 		<td>О</td>
 		<td>oh - (folk)</td>
-		<td><a href="javascript:playSegment(26, 27)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(26, 27)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>17</td>
 		<td>П п</td>
 		<td><img src="images/letter17.png"></td>
 		<td>Пэ</td>
 		<td>peh - (pet)</td>
-		<td><a href="javascript:playSegment(27.5, 29)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(27.5, 29)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>18</td>
 		<td>Р р</td>
 		<td><img src="images/letter18.png"></td>
 		<td>Эр</td>
 		<td>ehr - (roll)</td>
-		<td><a href="javascript:playSegment(29.5, 30.5)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(29.5, 30.5)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>19</td>
 		<td>С с</td>
 		<td><img src="images/letter19.png"></td>
 		<td>Эс</td>
 		<td>ehs - (see)</td>
-		<td><a href="javascript:playSegment(31, 32)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(31, 32)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>20</td>
 		<td>Т т</td>
 		<td><img src="images/letter20.png"></td>
 		<td>Тэ</td>
 		<td>teh - (tip)</td>
-		<td><a href="javascript:playSegment(32.5, 33.5)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(32.5, 33.5)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>21</td>
 		<td>У у</td>
 		<td><img src="images/letter21.png"></td>
 		<td>У</td>
 		<td>oo - (boot)</td>
-		<td><a href="javascript:playSegment(34, 35)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(34, 35)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>22</td>
 		<td>Ф ф</td>
 		<td><img src="images/letter22.png"></td>
 		<td>Эф</td>
 		<td>ehf - (face)</td>
-		<td><a href="javascript:playSegment(35, 36)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(35, 36)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>23</td>
 		<td>Х х</td>
 		<td><img src="images/letter23.png"></td>
 		<td>Ха</td>
 		<td>khah - (house)</td>
-		<td><a href="javascript:playSegment(36.5, 37.5)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(36.5, 37.5)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>24</td>
 		<td>Ц ц</td>
 		<td><img src="images/letter24.png"></td>
 		<td>Це</td>
 		<td>tseh - (sits)</td>
-		<td><a href="javascript:playSegment(38, 39)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(38, 39)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>25</td>
 		<td>Ч ч</td>
 		<td><img src="images/letter25.png"></td>
 		<td>Че</td>
 		<td>cheh - (chip)</td>
-		<td><a href="javascript:playSegment(39, 40)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(39, 40)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>26</td>
 		<td>Ш ш</td>
 		<td><img src="images/letter26.png"></td>
 		<td>Ша</td>
 		<td>shah - (shut)</td>
-		<td><a href="javascript:playSegment(41, 42)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(41, 42)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>27</td>
 		<td>Щ щ</td>
 		<td><img src="images/letter27.png"></td>
 		<td>Ща</td>
 		<td>schyah - (sheep)</td>
-		<td><a href="javascript:playSegment(42.5, 43.5)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(42.5, 43.5)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>28</td>
 		<td>ъ</td>
 		<td><img src="images/letter28.png"></td>
 		<td>твёрдый знак</td>
 		<td>tvyordyi znak</td>
-		<td><a href="javascript:playSegment(44, 45.5)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(44, 45.5)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>29</td>
 		<td>ы</td>
 		<td><img src="images/letter29.png"></td>
 		<td>Ы</td>
 		<td>i - (ill)</td>
-		<td><a href="javascript:playSegment(46, 47)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(46, 47)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>30</td>
 		<td>ь</td>
 		<td><img src="images/letter30.png"></td>
 		<td>мягкий знак</td>
 		<td>myagkeey znak</td>
-		<td><a href="javascript:playSegment(47.5, 49)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(47.5, 49)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>31</td>
 		<td>Э э</td>
 		<td><img src="images/letter31.png"></td>
 		<td>Э</td>
 		<td>eh - (met)</td>
-		<td><a href="javascript:playSegment(49.5, 50.5)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(49.5, 50.5)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr>
 		<td>32</td>
 		<td>Ю ю</td>
 		<td><img src="images/letter32.png"></td>
 		<td>Ю</td>
 		<td>yoo - (use)</td>
-		<td><a href="javascript:playSegment(51, 52)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(51, 52)"><img src='images/play-icon.png'></a>
 	</tr>
+    <tr class='spacing'>
+      <td colspan=6>
+        <hr>
+      </td>
+    </tr>
 	<tr class='no-border'>
 		<td>33</td>
 		<td>Я я</td>
 		<td><img src="images/letter33.png"></td>
 		<td>Я</td>
 		<td>yah - (yard)</td>
-		<td><a href="javascript:playSegment(52, 53.5)">PLAY</a>
+		<td class='play'><a href="javascript:playSegment(52, 53.5)"><img src='images/play-icon.png'></a>
 	</tr>
 </table>
 

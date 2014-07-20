@@ -42,18 +42,25 @@ a {
   font-weight: bold;
   text-decoration: underline;
 }
-table#alphabet td {
-  border-bottom: 1px solid #000;
-}
-table#alphabet .no-border td {
-  border: none !important;
-}
-table#alphabet img {
-  border: 4px solid black;
-}
-table#alphabet td {
+#alphabet td {
   text-align: center;
   font-size: 18px;
+  padding: 13px 13px 0px 13px;
+}
+#alphabet .spacing {
+  margin: 0px;
+  padding: 0px;
+}
+#alphabet img {
+  border: 4px solid black;
+}
+#alphabet .play img {
+  border: none;
+  width: 35px;
+  height: 35px;
+}
+#alphabet .play img:hover {
+  cursor: pointer;
 }
 .text-content {
   margin: 50px 100px 100px 200px; 
