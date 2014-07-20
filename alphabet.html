@@ -10,20 +10,21 @@
 var audio, segmentEnd;
 
 window.addEventListener('load', function() {
-audio = document.getElementById('alphabet');
+  audio = document.getElementById('alphabet');
 
-audio.addEventListener('timeupdate', function (){
+  audio.addEventListener('timeupdate', function (){
     if (segmentEnd && audio.currentTime >= segmentEnd) {
         audio.pause();
     }
-}, false);
+  }, false);
 });
 
 function playSegment(startTime, endTime){
-    segmentEnd = endTime;
-    audio.currentTime = startTime;
-    audio.play();
+  segmentEnd = endTime;
+  audio.currentTime = startTime;
+  audio.play();
 }
+
 </script>
 </head>
 
