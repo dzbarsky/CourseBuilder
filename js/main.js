@@ -1,4 +1,4 @@
-$(document).on('mouseover', '.hover', function() {
+$('.hover').on('mouseover', function() {
   if ($(this).find('.tag').length > 0) return;
   var tag  = document.createElement('div'),
       text = $(this).data('val'),
